@@ -56,7 +56,69 @@ header div#headerImage img {
 }
 
 nav {
+    width: 100%;
+    height: 60vh;
+    background-color: rgb(0, 0, 0);
+    transform: translate(-100vw, 0);
+    transition: .5s;
+}
+
+nav.switch {
+    transform: translate(0, 0);
+}
+
+div.burger {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 15vw;
+    line-height: 15vw;
+    text-align: center;
+    font-size: 10vw;
+    color: white;
+    cursor: pointer;
+    transition: .5s;
+}
+
+div.burger:hover {
+    color: rgb(4, 255, 171);
+}
+
+
+div.burger i.fas.switch {
     display: none;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-content: space-around;
+    width: 100%;
+    list-style: none;
+
+}
+
+nav ul li {
+    flex-grow: 1;
+    flex-basis: 10vh;
+    justify-content: space-around;
+    margin: 2% 20%;
+    color: white;
+    text-align: center;
+    font-size: 3rem;
+    transition: .6s;
+    cursor: pointer;
+}
+
+nav ul li:hover {
+    border-bottom: 1px solid grey;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    line-height: 10vh;
 }
 
 /* min-width 768px */
@@ -67,13 +129,38 @@ nav {
 
     header h1 {
         padding: 5% 3%;
-        font-size: 3.7rem;
+        font-size: 3.4rem;
     }
 
     header h2 {
         bottom: 2%;
         font-size: 2.5rem;
     }
+
+    nav {
+        width: 100%;
+        height: 65vh;
+        color: white;
+        background-color: rgb(0, 0, 0);
+    }
+
+    div.burger {
+
+        right: 5px;
+        top: 5px;
+        width: 10vw;
+        height: 10vw;
+
+
+    }
+
+    nav ul li {
+
+        margin: 2% 20%;
+        font-size: 4rem;
+
+    }
+
 }
 
 /* LANDSCAPE */
@@ -83,37 +170,20 @@ nav {
     }
 
     header h1 {
-        text-align: center;
-    }
-
-
-}
-
-/* Width 1366px */
-@media (min-width:1366px) {
-    header {
-        height: 45vh;
-    }
-
-    header h1 {
-        font-size: 5.7rem;
+        font-size: 4.3rem;
         position: absolute;
         z-index: 2;
         left: 20%;
         right: 20%;
-        top: 10%;
+        top: 33%;
         opacity: .9;
-    }
-
-    header h2 {
-        font-size: 3rem;
     }
 
     header div#headerImage {
         position: absolute;
-        left: 25%;
-        right: 25%;
-        width: 50%;
+        left: 0%;
+        right: 0%;
+        width: 100%;
         height: 100%;
         background-image: url(images/hdheader.png);
         background-size: cover;
@@ -126,4 +196,109 @@ nav {
         display: none;
     }
 
-}
+    nav {
+        width: 100%;
+        height: 80vh;
+    }
+
+    div.burger {
+        font-size: 45px;
+        top: -30px;
+        right: -10px;
+
+    }
+
+    nav ul li {
+        font-size: 4rem;
+    }
+
+    /* Width 1366px */
+    @media (min-width:1366px) {
+        header {
+            height: 70vh;
+        }
+
+        header h1 {
+            font-size: 5.5rem;
+            position: absolute;
+            z-index: 2;
+            left: 30%;
+            right: 25%;
+            top: 23%;
+            opacity: .9;
+        }
+
+        header h2 {
+            font-size: 3rem;
+            z-index: 2;
+        }
+
+        header div#headerImage {
+            position: absolute;
+            left: 15%;
+            right: 15%;
+            width: 70%;
+            height: 100%;
+            background-image: url(images/hdheader.png);
+            background-size: cover;
+            background-position: center;
+            z-index: 0;
+
+        }
+
+        header div#headerImage img {
+            display: none;
+        }
+
+        nav {
+
+            width: 100%;
+            height: 15vh;
+            color: white;
+            background-color: rgb(0, 0, 0);
+            transform: translate(0, 0);
+        }
+
+        div.burger {
+            display: none;
+        }
+
+
+        nav ul {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            align-items: flex-start;
+            justify-content: space-around;
+            list-style: none;
+            line-height: 15vh;
+
+        }
+
+        nav ul li {
+
+            height: 10vh;
+            color: white;
+            text-align: center;
+            font-size: 3rem;
+            transition: .6s;
+            margin: 0 50px;
+            cursor: pointer;
+
+        }
+
+        nav ul li:hover {
+            border-bottom: 5px solid rgb(230, 0, 0);
+        }
+
+        nav ul li a {
+
+            color: white;
+            text-decoration: none;
+            margin: 0;
+            line-height: 10vh;
+            width: 100%;
+        }
+
+
+    }

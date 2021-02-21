@@ -126,9 +126,10 @@ nav ul li a {
 
 section#offert {
     width: 100%;
-    height: 200vh;
+    height: auto;
     background-color: rgb(171, 0, 206);
     margin-top: 5px;
+    padding-bottom: 3vh;
     padding-top: 10px;
 }
 
@@ -137,7 +138,8 @@ div.offert {
     height: 45vh;
     text-align: center;
     background-color: purple;
-    margin: 0 auto;
+    margin: 5vh auto 5vh;
+    border-radius: 8%;
 }
 
 div.offert h1 {
@@ -165,6 +167,14 @@ div.offertImg img {
 
 div.offertImg img:hover {
     transform: rotate(235deg);
+}
+
+div.offertImg img#color:hover {
+    transform: rotate(360deg);
+}
+
+div.offertImg img#earth:hover {
+    transform: rotateY(180deg);
 }
 
 div.description p {
@@ -425,7 +435,7 @@ div.description p {
             background-color: rgb(171, 0, 206);
             margin-top: 15vh;
             padding-top: 10px;
-
+            padding-bottom: 30vh;
         }
 
         div.offert {

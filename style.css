@@ -170,7 +170,7 @@ div.offertImg img:hover {
 }
 
 div.offertImg img#color:hover {
-    transform: rotate(360deg);
+    transform: rotateX(360deg);
 }
 
 div.offertImg img#earth:hover {
@@ -182,8 +182,44 @@ div.description p {
     padding: 10px;
 }
 
+section#text {
+    padding-top: 25px;
+    border-top: 3px solid black;
+    background-color: rgb(171, 0, 206);
+    position: relative;
+}
 
+section#text h1 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-bottom: 3px solid rgb(216, 198, 198);
+    margin: 10px 65px;
+    ;
+    text-align: center;
+}
 
+section#text h2 {
+    font-size: 2.4rem;
+    margin: 10px auto;
+    text-align: center;
+}
+
+section#text p {
+    font-size: 1.8rem;
+    padding: 25px;
+    color: rgb(220, 255, 62);
+}
+
+section#text span {
+    position: absolute;
+    top: 90%;
+    left: 63%;
+    font-size: 2rem;
+    font-style: italic;
+    color: rgb(255, 255, 255);
+
+}
 
 /* min-width 768px */
 @media (min-width:768px) {
@@ -255,6 +291,25 @@ div.description p {
         padding: 55px;
     }
 
+    section#text h1 {
+        font-size: 4rem;
+        margin: 10px 125px;
+    }
+
+    section#text h2 {
+        font-size: 3.3rem;
+    }
+
+    section#text p {
+        font-size: 2.4rem;
+        padding: 50px 75px;
+    }
+
+    section#text span {
+        top: 90%;
+        left: 75%;
+        font-size: 3rem;
+    }
 
 }
 
@@ -480,6 +535,24 @@ div.description p {
             margin: 25px auto;
         }
 
+        section#text h1 {
+            font-size: 5rem;
+            margin: 10px 250px;
+        }
 
+        section#text h2 {
+            font-size: 4rem;
+        }
+
+        section#text p {
+            font-size: 3rem;
+            margin: 50px 10%;
+        }
+
+        section#text span {
+            top: 85%;
+            left: 75%;
+            font-size: 4rem;
+        }
 
     }
